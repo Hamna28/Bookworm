@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Habits — Bookworm Haven</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="book_logo1.jpg" alt="Bookworm Haven logo" class="logo" data-fallback-title="BH">
+      <div>
+        <span class="brand-name">BOOKWORM HAVEN</span>
+        <span class="brand-tagline">a shelf for every mood</span>
+      </div>
+    </div>
+    <div class="navbar-links">
+      <a href="cart.html" class="cart-link">
+        📖 <span>Cart</span>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <p class="breadcrumb"><a href="index.html">Home</a> / Atomic Habits</p>
+
+  <div class="book-container" data-book-id="5">
+    <div class="book-image">
+      <div class="cover-frame">
+        <img src="book5.jpg" alt="Atomic Habits cover" data-fallback-title="Atomic Habits">
+      </div>
+    </div>
+    <div class="book-details">
+      <span class="eyebrow">now on the shelf</span>
+      <h1>Atomic Habits</h1>
+      <p class="byline"><strong>Author:</strong> <span class="author-name">James Clear</span></p>
+      <p class="price" data-price="1250">Rs. 1,250</p>
+      <span class="description-label">Description</span>
+      <p class="description-text">Small daily choices, compounded over time, quietly add up to a completely different life.</p>
+
+      <div class="purchase-row">
+        <div class="qty-control">
+          <button type="button" id="qtyDecrease" aria-label="Decrease quantity">−</button>
+          <input type="number" id="qtyInput" value="1" min="1" max="99" aria-label="Quantity">
+          <button type="button" id="qtyIncrease" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="buy-btn" id="buyNowbtn">Buy Now</button>
+      </div>
+      <div id="cartMessage" class="cart-message">Added to cart!</div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="footer-quote">"A room without books is like a body without a soul."</p>
+    <p class="copyright">© 2025 Bookworm Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

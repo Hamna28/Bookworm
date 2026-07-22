@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — Bookworm Haven</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="book_logo1.jpg" alt="Bookworm Haven logo" class="logo" data-fallback-title="BH">
+      <div>
+        <span class="brand-name">BOOKWORM HAVEN</span>
+        <span class="brand-tagline">a shelf for every mood</span>
+      </div>
+    </div>
+    <div class="navbar-links">
+      <a href="index.html" class="nav-link">Continue shopping</a>
+      <a href="cart.html" class="cart-link">
+        📖 <span>Cart</span>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="cart-page">
+    <h1>Your Shelf</h1>
+    <p class="subtitle">— everything you've tucked aside to read next</p>
+
+    <div class="cart-layout" id="cartLayout">
+      <div class="cart-items" id="cartItems"></div>
+
+      <aside class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">Rs. 0</span>
+        </div>
+        <div class="summary-line">
+          <span>Shipping</span>
+          <span id="cartShipping">Rs. 0</span>
+        </div>
+        <div class="summary-line total">
+          <span>Total</span>
+          <span id="cartTotal">Rs. 0</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" type="button">Checkout</button>
+      </aside>
+    </div>
+
+    <div class="empty-cart" id="cartEmpty" style="display:none;">
+      <div class="empty-icon">📚</div>
+      <h2>Your shelf is empty</h2>
+      <p>go on, find something worth staying up for</p>
+      <a href="index.html" class="btn-primary">Browse the collection</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-quote">"A room without books is like a body without a soul."</p>
+    <p class="copyright">© 2025 Bookworm Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

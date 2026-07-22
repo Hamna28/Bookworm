@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookworm Haven — Books Worth Getting Lost In</title>
+  <meta name="description" content="Bookworm Haven is a cosy corner of the internet for readers — browse and buy novels across every genre.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="book_logo1.jpg" alt="Bookworm Haven logo" class="logo" data-fallback-title="BH">
+      <div>
+        <span class="brand-name">BOOKWORM HAVEN</span>
+        <span class="brand-tagline">a shelf for every mood</span>
+      </div>
+    </div>
+
+    <form class="search-form" role="search">
+      <label for="searchInput" class="visually-hidden">Search books</label>
+      <input type="text" id="searchInput" placeholder="Search titles or authors…" class="search-input">
+      <button type="submit" class="search-button" aria-label="Search">🔍</button>
+    </form>
+
+    <div class="navbar-links">
+      <a href="cart.html" class="cart-link">
+        📖 <span>Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">chapter one —</span>
+      <h1>Find your next <em>favourite</em> story.</h1>
+      <p>Hand-picked novels, classics and page-turners, delivered straight to your doorstep — because every good day deserves a good book.</p>
+      <div class="hero-actions">
+        <a href="#featured-books" class="btn-primary">Browse the shelf</a>
+        <a href="cart.html" class="btn-secondary">View cart</a>
+      </div>
+    </div>
+    <div class="bookstack" aria-hidden="true">
+      <span class="bird">🕊️</span>
+      <div class="spine"></div>
+      <div class="spine"></div>
+      <div class="spine"></div>
+      <div class="spine"></div>
+    </div>
+  </section>
+
+  <section class="featured-books section-wrap" id="featured-books">
+    <div class="section-header">
+      <div>
+        <h2>The Collection</h2>
+        <span class="section-sub">eight stories, endless worlds</span>
+      </div>
+      <button id="toggleViewBtn" type="button">List View</button>
+    </div>
+
+    <div class="book-grid" id="bookGrid">
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book1.jpg" alt="Pride and Prejudice cover" data-fallback-title="Pride and Prejudice">
+          <span class="ribbon-tag">Rs. 950</span>
+        </div>
+        <h3>Pride and Prejudice</h3>
+        <p class="author">by Jane Austen</p>
+        <a href="book1.html" class="btn">View Details</a>
+      </div>
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book2.jpg" alt="The Lord of the Rings cover" data-fallback-title="The Lord of the Rings">
+          <span class="ribbon-tag">Rs. 1,800</span>
+        </div>
+        <h3>The Lord of the Rings</h3>
+        <p class="author">by J.R.R. Tolkien</p>
+        <a href="book2.html" class="btn">View Details</a>
+      </div>
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book3.jpg" alt="The Adventures of Sherlock Holmes cover" data-fallback-title="Sherlock Holmes">
+          <span class="ribbon-tag">Rs. 1,100</span>
+        </div>
+        <h3>The Adventures of Sherlock Holmes</h3>
+        <p class="author">by Arthur Conan Doyle</p>
+        <a href="book3.html" class="btn">View Details</a>
+      </div>
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book4.jpg" alt="A Good Girl's Guide to Murder cover" data-fallback-title="A Good Girl's Guide to Murder">
+          <span class="ribbon-tag">Rs. 1,050</span>
+        </div>
+        <h3>A Good Girl's Guide To Murder</h3>
+        <p class="author">by Holly Jackson</p>
+        <a href="book4.html" class="btn">View Details</a>
+      </div>
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book5.jpg" alt="Atomic Habits cover" data-fallback-title="Atomic Habits">
+          <span class="ribbon-tag">Rs. 1,250</span>
+        </div>
+        <h3>Atomic Habits</h3>
+        <p class="author">by James Clear</p>
+        <a href="book5.html" class="btn">View Details</a>
+      </div>
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book6.jpg" alt="Dune cover" data-fallback-title="Dune">
+          <span class="ribbon-tag">Rs. 1,400</span>
+        </div>
+        <h3>Dune</h3>
+        <p class="author">by Frank Herbert</p>
+        <a href="book6.html" class="btn">View Details</a>
+      </div>
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book7.jpg" alt="Shatter Me cover" data-fallback-title="Shatter Me">
+          <span class="ribbon-tag">Rs. 999</span>
+        </div>
+        <h3>Shatter Me</h3>
+        <p class="author">by Tahereh Mafi</p>
+        <a href="book7.html" class="btn">View Details</a>
+      </div>
+
+      <div class="book-card">
+        <div class="cover-frame">
+          <img src="book8.jpg" alt="City Under One Roof cover" data-fallback-title="City Under One Roof">
+          <span class="ribbon-tag">Rs. 1,150</span>
+        </div>
+        <h3>City Under One Roof</h3>
+        <p class="author">by Iris Yamashita</p>
+        <a href="book8.html" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-quote">"A room without books is like a body without a soul."</p>
+    <p class="copyright">© 2025 Bookworm Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
